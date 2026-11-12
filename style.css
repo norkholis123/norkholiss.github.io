@@ -361,18 +361,41 @@ a {
     margin-top: 35px;
 }
 
+
+/* GALERI 5 FOTO */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-four {
+    background-image: url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=85');
+}
+
+.gallery-five {
+    background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=85');
+}
+
 .gallery-item {
     height: 250px;
-    border-radius: 12px;
     background-size: cover;
     background-position: center;
-    border: 1px solid #395b2d;
-    transition: .3s;
+    border-radius: 12px;
+    border: 1px solid #8df000;
+    transition: .4s;
 }
 
 .gallery-item:hover {
-    transform: scale(1.03);
-    border-color: var(--green);
+    transform: scale(1.04);
+    box-shadow: 0 0 20px #8df00060;
+}
+
+@media(max-width: 650px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gallery-one {
