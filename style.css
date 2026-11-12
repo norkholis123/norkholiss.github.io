@@ -370,28 +370,19 @@ a {
     gap: 20px;
 }
 
-.gallery-four {
-    background-image: url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=85');
-}
-
-.gallery-five {
-    background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=85');
-}
-
 .gallery-item {
+    width: 100%;
     height: 250px;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
     border-radius: 12px;
-    border: 1px solid #8df000;
-    transition: .4s;
 }
 
-.gallery-item:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 20px #8df00060;
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
 @media(max-width: 650px) {
     .gallery-grid {
         grid-template-columns: 1fr;
